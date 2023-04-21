@@ -1,40 +1,46 @@
 class script(object):
-    START = """**Hello {} 🤟**
+    START = """**Hᴇʏ {} 🤟
    
-I am **Find Post Bot**.I am best Channel Link Search Bot! 
-I Will filter your channel posts automatically and send it in your group chat when Someone search it."""
+Mʏ ꜱᴇʟꜰ Pᴏꜱᴛ Sᴇᴀʀᴄʜ Bᴏᴛ.  ɪ ᴀᴍ ᴛʜᴇ
+ʙᴇꜱᴛ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ ꜱᴇᴀʀᴄʜ ʙᴏᴛ!
 
-    HELP = """To Use me In A Group
+ɪ ᴡɪʟʟ ꜰɪʟᴛᴇʀ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ... Pᴏꜱᴛꜱ
+ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀɴᴅ ꜱᴇɴᴅ ɪᴛ ɪɴ ʏᴏᴜʀ 
+ɢʀᴏᴜᴘ ᴡʜᴇɴ ꜱᴏᴍᴇᴏɴᴇ ꜱᴇᴀʀᴄʜ ɪᴛ.**"""
 
-- Add me in your group & channel with all permissions. 
-- Send /verify in group & wait for It To Accept Or Directly Contact To Owner After Request @GreyMatter_Bots.
-- After verification send /connect YourChannelID
-- Example : /connect -100xxxxxxxxxx
-- Done ✅. <b><I>Enjoy 💜❤</I></b> )
+    HELP = """**Yᴏᴜ Wᴀɴᴛ ᴛᴏ Uꜱᴇ Mᴇ ɪɴ Yᴏᴜʀ Gʀᴏᴜᴘ Fᴏʟʟᴏᴡ Tʜᴇ Sᴛᴇᴘꜱ Gɪᴠᴇɴ Bᴇʟᴏᴡ👇
 
-Remove a Channel with - /disconnect-100xxxxxxxxxxx
-this will help you to remove a indexed channel from your group.
+» ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ & ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ.
+ 
+» ꜱᴇɴᴅ /verify ɪɴ ɢʀᴏᴜᴘ & ᴡᴀɪᴛ ꜰᴏʀ ɪᴛ ᴛᴏ ᴀᴄᴄᴇᴘᴛ ᴏʀ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ ᴀꜰᴛᴇʀ ʀᴇǫᴜᴇsᴛ @XKunalBot
 
-Get connected channels list with - /connections"""
+» ᴀꜰᴛᴇʀ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ꜱᴇɴᴅ /connect ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪᴅ
 
-    ABOUT = """Developed By @CyniteBackup
+» ᴇxᴀᴍᴘʟᴇ: /connect -100xxxxxxxxxx
+
+» ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴀ ɪɴᴅᴇxᴇᴅ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ʏᴏᴜʀ ɢʀᴏᴜᴘ
+/disconnect -100xxxxxxxxxxx
+
+» ɢᴇᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ʟɪꜱᴛ ᴡɪᴛʜ  /connections**"""
+
+    ABOUT = """**Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ @LazYHuB
 
 ✯ Mʏ Nᴀᴍᴇ:  {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/CyniteOfficial'>Harman</a>
+✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/XKunalBot'>𝕏 𝖪ᴜɴᴀʟ࿐</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
 ✯ DᴀᴛᴀBᴀsᴇ: <a href='https://cloud.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: : <a href='https://heroku.com'>Heroku</a>"""
+✯ Bᴏᴛ Sᴇʀᴠᴇʀ: : <a href='https://heroku.com'>Hᴇʀᴏᴋᴜ</a>**"""
 
-    STATS = """My Status 💫
+    STATS = """**Bᴏᴛ Sᴛᴀᴛᴜꜱ 💫
 
-👥 Users: {}
-🧿 Groups: {}"""
+👥 Uꜱᴇʀꜱ: {}
+🧿 Gʀᴏᴜᴘꜱ: {}**"""
 
-    BROADCAST = """<u>{}</u>
+    BROADCAST = """**<u>{}</u>**
 
-Total: `{}`
-Remaining: `{}`
-Success: `{}`
-Failed: `{}`"""
+**Tᴏᴛᴀʟ:** `{}`
+**Rᴇᴍᴀɪɴɪɴɢ:** `{}`
+**Sᴜᴄᴄᴇꜱꜱ:** `{}`
+**Fᴀɪʟᴇᴅ:** `{}`"""
 
     
