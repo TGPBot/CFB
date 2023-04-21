@@ -101,7 +101,7 @@ async def force_sub(bot, message):
        f_link = (await bot.get_chat(f_sub)).invite_link
        member = await bot.get_chat_member(f_sub, message.from_user.id)
        if member.status==enums.ChatMemberStatus.BANNED:
-          await message.reply(f"Sorry {message.from_user.mention}!\n You are banned in our channel, you will be banned from here within 10 seconds")
+          await message.reply(f"**Sᴏʀʀʏ {message.from_user.mention}!\n\nYᴏᴜ Aʀᴇ Bᴀɴɴᴇᴅ 📵ɪɴ Oᴜʀ\nCʜᴀɴɴᴇʟ\n\nYᴏᴜ Wɪʟʟ Bᴇ Bᴀɴɴᴇᴅ Fʀᴏᴍ\nHᴇʀᴇ Wɪᴛʜɪɴ 10 Sᴇᴄᴏɴᴅꜱ**")
           await asyncio.sleep(10)
           await bot.ban_chat_member(message.chat.id, message.from_user.id)
           return False       
@@ -110,9 +110,9 @@ async def force_sub(bot, message):
                                       user_id=message.from_user.id,
                                       permissions=ChatPermissions(can_send_messages=False)
                                       )
-       await message.reply(f"⚠ Dear User {message.from_user.mention}!\n\nto send message in the group,You have to join in our channel to message here", 
-                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url=f_link)],
-                                                          [InlineKeyboardButton("Try Again", callback_data=f"checksub_{message.from_user.id}")]]))
+       await message.reply(f"**Hᴇʏ {message.from_user.mention}⚠\n\nYᴏᴜ Mᴜꜱᴛ Hᴀᴠᴇ ᴛᴏ Jᴏɪɴ Tʜᴇ \nBᴀᴄᴋᴜᴘ Cʜᴀɴɴᴇʟ\n\nBᴇꜰᴏʀᴇ Sᴇɴᴅ Mᴇꜱꜱᴀɢᴇ Hᴇʀᴇ**", 
+                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔔Jᴏɪɴ Bᴀᴄᴋᴜᴘ Cʜᴀɴɴᴇʟ🔔", url=f_link)],
+                                                          [InlineKeyboardButton("🔄Tʀʏ Aɢᴀɪɴ🔄", callback_data=f"checksub_{message.from_user.id}")]]))
        await message.delete()
        return False
     except Exception as e:
